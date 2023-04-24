@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Marielena</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+  <style>
+        body{
+           background-color: #101116;
+           text-align: center; 
+
+        }
+        .body_title{
+            color: white;
+        }
+        .body_img{
+            width: 40%;
+            border-radius: 50%;
+        }
+    </style>
+</head>
+<body>
+    <div class="conteiner">
+        <h1 class ="body_title">MARIELENA aceptarias una llamada esta noche 😉</h1>
+        <img 
+            src="https://lh3.googleusercontent.com/oYnv3nwgv9rPB6WXj723dZhH-jw6iG7rsAam3zWmuDeBAS3ugjndNccR-_p6tagpfzyUkI3DdzV4s_GU5w7T3sn32VHQg8qei_RP7oJsAXuN7jVprCQqR77aCsgwacCg0WGCI3A8syEH0oqWcGa69vNfDf-uxsxHlkZmJNCNcXZ6Www4Jn7_1nEX6ZlKTYDgEdPFAT13wHMCc--pUaRNyBmNAYIbY1mOCb2derSoPnEyu17sfPnxXvnnvPIMf_abAcQTMkO-4Wt6DN3Fh-H4R74OB53fDKmQkO2X2FlUuoJUoRd7-2McL3_jSQo2bQM2sm0sPMdOb_LhzgM1OaiaI1KcfG4SaZhigqeMN3vZtbH4cd443yIJfYw1znTDuakAKN5MgvafypqdmPCNtuym_4QCx9nobv3_h-Kqk0PImtMbuHtOoKI8oic6jRDuaFO4oZwP4lNZBp8gJpYLB6RpyebDSDkaooECNt0ZnBP0gx5v4XEreEwGvzBwOC8-NJ4-rpVj65n2B2NER37WWcLj469kseI-dDXvNekN38-YMQD-8UIkzmeEaMYneBmBBU_0kvIuKblSZ2mGy5JnYwCmhG4zM7Q0JngygH9i6EcSl7ot_O5jKQchY7_gjHZNExPE-kDRvNUeQgM2b1DVkeygHcO67QBjARFWBRdvRVi-tqB65L6rJ-xGUXvmUPAvYyY_yi0pH8zqJ8UJmMlWFgPbdmXxeNok7NpjRxQnCNLaQo1piFnP5hrGPwRfUvrtUxs9D3-EAuX5tVAp9P6Dp2K2JdRAwwoBNyBNIUmcf51sHyIUVrSNPV_rv0xygCjv6ESTe92cdi2-HeeLnIxf8l8M4rqfQ1tqwz7WQCe4oKgO4cmxZ9ujEhOeYhzR0zPh8JyJVcHdOn0GHZA5ec-sjmNuXMbfL44586x8i1NJNLjBlpZ1=w479-h657-s-no?authuser=0";
+            alt="Emely" class="body_img">
+    </div>
+    <div>
+        <button id="yes" class="btn btn-success">Me encantaria</button>
+        <button id="no" class="btn btn-danger" >Lo siento</button>
+    </div>
+    <script>
+
+        const botonSi=document.getElementById("yes");
+        const botonNo=document.getElementById("no");
+
+        const salircontigo = () => {
+            alert('Recuerda peinarte antes de cada llamada ');
+            alert('Pero no olvides que al natural eres super bonita');
+            alert('Te dejo una canción, donde quiero decirte que me importa más el conocerte que dejarte ir');
+            alert('Mejoraré en mis diseños de la pagina para poder hacer el aplicativo para nuestra empresa');
+            alert('Un abrazoote de un bebé y escucha la siguiente canción');
+            location.href='https://youtu.be/LME0BWnWi6U=12s';
+        }
+
+        const seguirIntentando = () => {
+            botonNo.style.position ='absolute';
+            botonNo.style.top=(Math.random()* window.innerHeight)+'px';
+            botonNo.style.left=(Math.random()* window.innerWidth)+'px';       
+        }
+
+        botonSi.addEventListener('click',salircontigo);
+        botonNo.addEventListener('mouseover', seguirIntentando);
+    </script>
+
+
+</body>
+</html>
